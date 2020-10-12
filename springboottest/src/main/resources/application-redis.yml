@@ -1,0 +1,13 @@
+#redis config
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 100
+        min-idle: 10
+        max-wait: -1
+    timeout: 5000
+    database: 0

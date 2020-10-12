@@ -1,0 +1,28 @@
+#数据库连接设置
+#spring.datasource.url=jdbc:mysql://127.0.0.1:3306/mysql-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+#spring.datasource.username=root
+#spring.datasource.password=123456
+#
+#
+## HikariCP 自定义配置，对应 HikariConfig 配置属性类
+## 池中最大连接数，包括闲置和使用中的连接，默认为 10 个
+#spring.datasource.hikari.maximum-pool-size=10
+## 池中维护的最小空闲连接数，默认为 10 个
+#spring.datasource.hikari.minimum-idle=10
+#
+#spring.datasource.mytest2.url=jdbc:mysql://127.0.0.1:3306/mysql-test2?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+#spring.datasource.mytest2.driver-class-name=com.mysql.jdbc.Driver
+#spring.datasource.mytest2.username=root
+#spring.datasource.mytest2.password=123456
+#
+## 池中最大连接数，包括闲置和使用中的连接，默认为 10 个
+#spring.datasource.hikari.maximum-pool-size=10
+## 池中维护的最小空闲连接数，默认为 10 个
+#spring.datasource.hikari.minimum-idle=10
+
+
+
+spring:
+  profiles:
+    include: dataSource,job,redis,security

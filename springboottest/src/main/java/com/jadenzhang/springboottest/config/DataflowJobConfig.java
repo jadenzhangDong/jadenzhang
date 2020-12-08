@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.Resource;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Configuration
 public class DataflowJobConfig {

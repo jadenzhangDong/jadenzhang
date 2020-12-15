@@ -80,6 +80,7 @@ public class UniquePaths {
 
         for (int j = 0; j < n; j++) {
             dp[0][j] = 1;
+
         }
         
         //自底向上进行递推

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class MaxProfit {
     public int maxProfit(int[] prices) {
-        //定义双指针，双向遍历，遍历到相遇的时候则停止，寻找到最大和最小值进行相减
+        //动态规划，寻找到最大的差值
         int maxProfit = 0;
         if(prices.length>0){
             int minPrice = prices[0];

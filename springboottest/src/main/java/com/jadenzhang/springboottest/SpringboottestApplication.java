@@ -49,4 +49,8 @@ public class SpringboottestApplication {
 //            throw new RuntimeException(e);
 //        }
 //    }
+
+    private void test(){
+        System.out.println("git测试");
+    }
 }
